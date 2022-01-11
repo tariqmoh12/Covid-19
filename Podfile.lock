@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (5.4.4)
+  - GoogleMaps (5.1.0):
+    - GoogleMaps/Maps (= 5.1.0)
+  - GoogleMaps/Base (5.1.0)
+  - GoogleMaps/Maps (5.1.0):
+    - GoogleMaps/Base
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - SDWebImage (5.12.1):
+    - SDWebImage/Core (= 5.12.1)
+  - SDWebImage/Core (5.12.1)
+
+DEPENDENCIES:
+  - GoogleMaps (= 5.1.0)
+  - Moya
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - GoogleMaps
+    - Moya
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  GoogleMaps: 086ae1dab659eaa7339bdb30fc88e2f44e7c597c
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  SDWebImage: 4dc3e42d9ec0c1028b960a33ac6b637bb432207b
+
+PODFILE CHECKSUM: 0298e3d130582a9260d7fbbe091970f90e7e0e15
+
+COCOAPODS: 1.11.2
