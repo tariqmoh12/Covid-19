@@ -47,8 +47,26 @@ class StatisticsDataSource : NSObject, UITableViewDataSource , UITableViewDelega
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CountryStatisticsTableViewCell", for: indexPath) as! CountryStatisticsTableViewCell
-        if let value = data.value?.total?.todayConfirmed{
-            cell.valueLabel.text = "\(Names[indexPath.row]) : \(value)"
+        if let value = data.value?.total{
+
+        switch indexPath.row{
+        case 0 :
+            
+            cell.valueLabel.text = "\(Names[indexPath.row]) : \((value.todayConfirmed))"
+        case 1 :
+            cell.valueLabel.text = "\(Names[indexPath.row]) : \(value.todayDeaths)"
+        case 2 :
+            cell.valueLabel.text = "\(Names[indexPath.row]) : \(value.todayNewConfirmed)"
+        case 3 :
+            cell.valueLabel.text = "\(Names[indexPath.row]) : \(value.todayNewDeaths)"
+        case 4 :
+            cell.valueLabel.text = "\(Names[indexPath.row]) : \(value.todayNewOpenCases)"
+        case 5:
+            cell.valueLabel.text = "\(Names[indexPath.row]) : \(value.todayNewRecovered)"
+        default:
+            break
+            
+        }
         }
 //        guard let articleModel = data.value?.total else { return UITableViewCell()}
 //        cell.model = data.value?
