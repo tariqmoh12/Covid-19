@@ -37,6 +37,9 @@ class ArticlesTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         self.backgroundColor = .black
+        self.articleTitleLabel.textColor = .white
+        self.articleDescLabel.textColor = .white
+        self.sourceLabel.textColor = .white
      
     }
 
